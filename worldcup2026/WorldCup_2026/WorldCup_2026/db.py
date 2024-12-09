@@ -14,9 +14,9 @@ POSTGRESQL = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'worldcup',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': ''
     }
 }
 
@@ -25,9 +25,9 @@ MYSQL = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db',
         'USER': 'root',
-        'PASSWORD': 'password',
+        'PASSWORD': '',
         'HOST': 'localhost', 
-        'PORT': '3306',
+        'PORT': '',
 				'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"},
     }
 }
