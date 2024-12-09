@@ -1,0 +1,62 @@
+{% extends 'logged/base.html' %}
+{% load static %}
+{% block title %}
+Jugador: {{ player.p_first_name }} {{ player.p_first_last_name }}
+{% endblock %}
+{% block content %}
+<base href="/">
+<br>
+<br>
+<br>
+<div class="contenedor container col-12 mt-5 secondary mb-5 flex-column">
+    <h1 class="text-center mt-3">Registro del jugador</h1>
+    <br>
+    <div class="row">
+        <div class="col-4 d-flex justify-content-center">
+            <div class="flex-column d-flex align-items-center">
+                <img src="{{ player.p_photo.url }}" class="rounded-circle" style="width: 12rem;">
+            </div>
+        </div>
+        <div class="col-4 d-flex">
+            <div class="flex-column d-flex align-items-center col-12">
+                <div class="d-flex flex-column col-12 text-center">
+                    <h1 class="col-12">{{ player.p_first_name }}
+                        {% if player.p_second_name %}
+                        {{ player.p_second_name }}
+                        {% endif %}
+                        {{ player.p_first_last_name }}
+                        {% if player.p_second_last_name %}
+                        {{ player.p_second_last_name }}
+                        {% endif %}
+                    </h1>
+                    <h1>{{ player.p_birth }}</h1>
+                    <br>
+                    <br>
+                    
+                    <h1>{{ player.p_number}} - {{ player.p_position.position_name }}
+                        {% if player.p_is_titular %}
+                        Titular
+                        {% endif %}
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="flex-column d-flex align-items-center">
+                <div class="w-75 my-auto d-flex" style="background-color: beige;">
+                    <img src="{{ team_flag }}" alt="Bandera de {{ team_name }}" class="w-100 my-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="flex-column d-flex align-items-center">
+                <br>
+                <br>
+                <img src="{{ player.p_position.position_image.url }}" style="margin-top: 7rem;height: 65%; width: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,615 @@
+body{
+    font-family:'Product_Sans';
+    background-image: url("/../Evauacion_Django/WorldCup_2026/static/images/back.gif") !important;
+}
+
+
+.profile-image{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.boton{
+    background-color: transparent;
+    border: 2px black solid;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.boton:hover{
+    background-color: black !important;
+    color: white;
+    box-shadow: 4px 4px 0px #252525;
+    transition: .6s;
+}
+
+.dropdown-menu{
+    background-color: #1c1c1c;
+}
+
+.dropdown-menu a{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #3f3f3f;
+    color: rgb(255, 255, 255);
+}
+
+#profile{
+    background-color: #1174ff;
+    transition: .5s;
+}
+
+#profile:hover{
+    background-color: #114ea2;
+    color: white;
+    transition: .5s;
+}
+
+#logout{
+    background-color: #d01b1b;
+    transition: .5s;
+}
+
+#logout:hover{
+    background-color: #9a0808;
+    color: white;
+    transition: .5s;
+}
+
+#players{
+    background-color: #ffd931;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+#players:hover{
+    color: rgb(255, 255, 255);
+}
+
+.animated-background1 {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background1::before {
+    content: "";
+    position: absolute;
+    top: -75%;
+    left: -50%;
+    width: 1000rem;
+    height: 1000rem;
+    background-image: url('../../images/shirt.png');
+    background-size: 200px 120px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#pys:hover .animated-background1::before {
+    opacity: 1;
+    animation: moveShirt 5s linear infinite;
+}
+
+@keyframes moveShirt {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(-30px);
+    }
+    50%{
+        transform: translateX(50px) translateY(-60px);
+    }
+    75%{
+        transform: translateX(75px) translateY(-90px);
+    }
+    100% {
+        transform: translateX(100px) translateY(-120px);
+    }
+}
+
+#coach{
+    background-color: #068212;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+#coach:hover{
+    color: black;
+}
+
+.animated-background2 {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    width: 1000rem;
+    z-index: 1;
+}
+
+.animated-background2::before {
+    content: "";
+    position: absolute;
+    top: -75%;
+    left: -50%;
+    width: 1000rem;
+    height: 1000rem;
+    background-image: url('../../images/tecnico.png');
+    background-repeat: repeat-y, repeat-x;
+    background-size: 200px 120px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#cch:hover .animated-background2::before {
+    opacity: 1;
+    animation: moveTech 5s linear infinite;
+}
+
+@keyframes moveTech {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(-30px);
+    }
+    50%{
+        transform: translateX(50px) translateY(-60px);
+    }
+    75%{
+        transform: translateX(75px) translateY(-90px);
+    }
+    100% {
+        transform: translateX(95px) translateY(-120px);
+    }
+}
+
+#teams{
+    background-color: #3d3d3d;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+#teams:hover{
+    color: rgb(255, 255, 255);
+}
+
+.animated-background3 {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    width: 1000rem;
+    z-index: 1;
+}
+
+.animated-background3::before {
+    content: "";
+    position: absolute;
+    top: -75%;
+    left: -50%;
+    width: 1000rem;
+    height: 1000rem;
+    background-image: url('../../images/teams.png');
+    background-repeat: repeat;
+    background-size: 200px 120px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#tms:hover .animated-background3::before {
+    opacity: 1;
+    animation: moveBall 5s linear infinite;
+}
+
+@keyframes moveBall {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(-30px);
+    }
+    50%{
+        transform: translateX(50px) translateY(-60px);
+    }
+    75%{
+        transform: translateX(75px) translateY(-90px);
+    }
+    100% {
+        transform: translateX(95px) translateY(-120px);
+    }
+}
+
+#canada{
+    background-color: #ff3939;
+    color: white;
+}
+
+.animated-background4 {
+    position: relative;
+    background-color: #ff3939;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background4::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.4) 75%, rgba(255, 255, 255, 0.4) 100%);
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#can:hover .animated-background4::before {
+    opacity: 1;
+    animation: moveLines 1.5s linear infinite;
+}
+
+@keyframes moveLines {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(0px);
+    }
+    50%{
+        transform: translateX(50px) translateY(0px);
+    }
+    75%{
+        transform: translateX(75px) translateY(0px);
+    }
+    100% {
+        transform: translateX(100px) translateY(0px);
+    }
+}
+
+#united{
+    background-color: rgb(3, 45, 213);
+    color: white;
+}
+
+.animated-background5 {
+    position: relative;
+    background-color: #1154ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background5::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1000%;
+    height: 1000%;
+    background-image: radial-gradient(circle, transparent 20%, #ff505057 20%, #ff3a3a3f 40%, transparent 40%, transparent 60%, #ffffff41 60%, #ffffff4c 80%, transparent 80%);
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#us:hover .animated-background5::before {
+    opacity: 1;
+    animation: moveCircles 1.5s linear infinite;
+}
+
+@keyframes moveCircles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}
+
+#mexico{
+    background-color: rgb(0, 221, 29);
+    color: white;
+}
+
+.animated-background6{
+    position: relative;
+    background-color: #129b00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background6::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1000%;
+    height: 1000%;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #c61000a2 25%,
+        transparent 25%,
+        transparent 50%,
+        #cf1100b1 50%,
+        #c51000aa 75%,
+        transparent 75%,
+        transparent 100%
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #ffffff84 25%,
+        transparent 25%,
+        transparent 50%,
+        #ffffff8d 50%,
+        #ffffff80 75%,
+        transparent 75%,
+        transparent 100%
+    );
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#mx:hover .animated-background6::before {
+    opacity: 1;
+    animation: triangles 1.5s linear infinite;
+}
+
+@keyframes triangles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}
+
+#animated-background7 {
+    position: relative;
+    background-color: #ff3939 !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+#animated-background7::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.4) 75%, rgba(255, 255, 255, 0.4) 100%);
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.poster1:hover #animated-background7::before {
+    opacity: 1;
+    animation: moveLines 1.5s linear infinite;
+}
+
+@keyframes moveLines {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(0px);
+    }
+    50%{
+        transform: translateX(50px) translateY(0px);
+    }
+    75%{
+        transform: translateX(75px) translateY(0px);
+    }
+    100% {
+        transform: translateX(100px) translateY(0px);
+    }
+}
+
+#united{
+    background-color: rgb(3, 45, 213);
+    color: white;
+}
+
+.animated-background5 {
+    position: relative;
+    background-color: #1154ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background5::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1000%;
+    height: 1000%;
+    background-image: radial-gradient(circle, transparent 20%, #ff505057 20%, #ff3a3a3f 40%, transparent 40%, transparent 60%, #ffffff41 60%, #ffffff4c 80%, transparent 80%);
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#us:hover .animated-background5::before {
+    opacity: 1;
+    animation: moveCircles 1.5s linear infinite;
+}
+
+@keyframes moveCircles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}
+
+#mexico{
+    background-color: rgb(0, 221, 29);
+    color: white;
+}
+
+.animated-background6{
+    position: relative;
+    background-color: #129b00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background6::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1000%;
+    height: 1000%;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #c61000a2 25%,
+        transparent 25%,
+        transparent 50%,
+        #cf1100b1 50%,
+        #c51000aa 75%,
+        transparent 75%,
+        transparent 100%
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #ffffff84 25%,
+        transparent 25%,
+        transparent 50%,
+        #ffffff8d 50%,
+        #ffffff80 75%,
+        transparent 75%,
+        transparent 100%
+    );
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+#mx:hover .animated-background6::before {
+    opacity: 1;
+    animation: triangles 1.5s linear infinite;
+}
+
+@keyframes triangles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}

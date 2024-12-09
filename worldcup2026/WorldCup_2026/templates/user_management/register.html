@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/user_management/main.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script src="{% static 'js/user_management/main.js' %}" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Regístrate | WorldCup - 2026</title>
+</head>
+<body class="d-flex primary flex-column">
+    <nav class="navbar navbar-expand-lg navbar-custom quartary fixed-top d-flex">
+        <a href="{% url 'index' %}"><img class="logo" src="{% static 'images/logo.png' %}"></a>
+    </nav>
+    <div class="secondary login col-6 w-50 mx-auto container mb-5">
+        <div class="col-12 mx-auto mt-4 text-center">
+            <h4>Bienvenido, Ayúdanos a conocerte mejor diligenciando los siguientes campos:</h4>
+        </div>
+        <form method="POST" action="{% url 'register' %}" enctype="multipart/form-data" class="col-6 mx-auto form">
+            {% csrf_token %}
+            {% if message %}
+            <div class="row d-flex col-12">
+                <p class="mx-auto text-center" style="color: #C2FF33">{{ message }}</p>
+            </div>
+            {% endif %}
+            <div class="form-group">
+                <label id="usr" for="username">Usuario</label>
+                <input type="text" name="username" class="form-control">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="form-group">
+                <label id="fna" for="first_name">Nombre(s)</label>
+                <input type="text" name="first_name" class="form-control">
+                <i class='bx bxs-id-card'></i>
+            </div>
+            <div class="form-group">
+                <label id="lna" for="last_name">Apellido(s)</label>
+                <input type="text" name="last_name" class="form-control">
+                <i class='bx bxs-id-card'></i>
+            </div>
+            <div class="form-group">
+                <label id="eml" for="email">E-mail</label>
+                <input type="email" name="email" class="form-control">
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="form-group">
+                <label id="pho" for="photo">Foto</label>
+                <input type="file" name="photo" class="form-control">
+            </div>
+            <div class="form-group">
+                <label id="tel" for="phone">Teléfono</label>
+                <input type="text" name="phone" class="form-control">
+                <i class='bx bxs-phone'></i>
+            </div>
+            <div class="form-group">
+                <label id="psw" for="password">Contraseña</label>
+                <input type="password" name="password" class="form-control">
+                <i class='bx bx-key'></i>
+            </div>
+            <div class="form-group">
+                <label id="rpw" for="password2">Repite la contraseña</label>
+                <input type="password" name="password2" class="form-control">
+                <i class='bx bx-key'></i>
+            </div>
+            <div class="row col-8 mx-auto mt-5">
+                <button type="submit" id="btn">Registrarse</button>
+            </div>
+            <h6 class="text-center" id="link">¿Ya estás registrado? Inicia sesión <a href="login" class="text-decoration-none">aquí</a></h6>
+        </form>
+    </div>
+</body>
+</html>

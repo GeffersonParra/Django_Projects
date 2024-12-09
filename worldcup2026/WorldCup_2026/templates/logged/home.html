@@ -1,0 +1,66 @@
+{% extends 'logged/base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<div class="info-nav d-flex">
+    <h5 class="mx-auto mt-4">Bienvenido al sitio FIFA WorldCup 2026, podrás encontrar información relevante sobre el
+        próximo mundial aquí</h5>
+</div>
+<div class="container col-12 mt-5 secondary mb-5">
+    <h1 class="mx-auto text-center mt-3">Países Y Ciudades Anfitriones</h1>
+    <br>
+    <br>
+    <div class="col-10 row mx-auto rounded-3" id="canada" style="background-color: rgb(21, 21, 21);">
+        <div class="column col-4 h-75 my-auto" id="can">
+            <a href="cities/can" style="text-decoration: none;">
+                <div class="animated-background4 col-12 h-100 w-100 rounded-4 d-flex">
+                    <h1 class="mx-auto my-auto">Canada</h1>
+                </div>
+            </a>
+        </div>
+        <div class="column col-8">
+            <h1 class="col-12 text-center mt-3">Canadá</h1>
+            <h3 class="col-12 text-center">Canadá abre sus puertas para recibir el mundial de la FIFA 2026, conoce las
+                ciudades donde se llevarán a cabo los eventos en este país <a href="cities/canada"
+                    style="color: #C2FF33; text-decoration: none; font-weight: 800;">aquí</a>.</h3>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-10 row mx-auto rounded-3" id="united" style="background-color: rgb(21, 21, 21);">
+        <div class="column col-8">
+            <h1 class="col-12 text-center mt-3">EE.UU.</h1>
+            <h3 class="col-12 text-center">Estados unidos se prepara para ser el hogar del próximo mundial, conoce las
+                ciudades donde se llevarán a cabo los eventos en este país <a href="cities/united-states"
+                    style="color: #C2FF33; text-decoration: none; font-weight: 800;">aquí</a>.</h3>
+        </div>
+        <div class="column col-4 h-75 my-auto" id="us">
+            <a href="cities/us" style="text-decoration: none;">
+                <div class="animated-background5 col-12 h-100 w-100 rounded-4 d-flex">
+                    <h1 class="mx-auto my-auto">EE.UU.</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-10 row mx-auto rounded-3 mb-5" id="mexico" style="background-color: rgb(21, 21, 21);">
+        <div class="column col-4 h-75 my-auto" id="mx">
+            <a href="cities/mx" style="text-decoration: none;">
+                <div class="animated-background6 col-12 h-100 w-100 rounded-4 d-flex">
+                    <h1 class="mx-auto my-auto">México</h1>
+                </div>
+            </a>
+        </div>
+        <div class="column col-8">
+            <h1 class="col-12 text-center mt-3">México</h1>
+            <h3 class="col-12 text-center">México acogerá el próximo mundial en sus principales ciudades, ¿Quieres
+                Conocerlas? haz click
+                <a href="cities/mexico" style="color: #C2FF33; text-decoration: none; font-weight: 800;">aquí</a>.
+            </h3>
+        </div>
+    </div>
+</div>
+{% endblock %}

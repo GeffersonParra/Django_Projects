@@ -1,0 +1,70 @@
+{% extends 'logged/base.html' %}
+{% load static %}
+{% block title %}
+Jugadores
+{% endblock %}
+{% block content %}
+<base href="/">
+<br>
+<br>
+<br>
+<div class="contenedor container col-12 mt-5 secondary mb-5">
+    <h1 class="mx-auto text-center mt-4">El alma del mundial y sus principales protagonistas, con ustedes, los
+        jugadores:</h1>
+    <br>
+    <div class="row">
+        {% for players in players %}
+        {% if players.p_is_titular %}
+        <a href="{% url 'player_detail' players.id %}" class="link">
+            <div class="tabla1 container d-flex mb-3 rounded-4 col-11">
+                <div class="row col-12 d-flex justify-content-start">
+                    <img src="{{ players.p_team.flag.url }}" class="flag rounded-circle">
+                    <h3 class="col-5 my-auto text-center">
+                        {{ players.p_first_name }}
+                        {% if players.p_second_name %}
+                        {{ players.p_second_name }}
+                        {% endif %}
+                        {{ players.p_first_last_name }}
+                        {% if players.p_second_last_name %}
+                        {{ players.p_second_last_name }}
+                        {% endif %}
+                    </h3>
+                    <h3 class="col-3 my-auto text-center">{{ players.p_number }}</h3>
+                    <h3 class="col-2 my-auto text-center">{{ players.p_position.position_name }}</h3>
+                    <img src="{{ players.p_photo.url }}" class="photop rounded-circle">
+                </div>
+            </div>
+        </a>
+        {%else%}
+        <a href="{% url 'player_detail' players.id %}" class="link">
+            <div class="tabla2 container d-flex mb-3 rounded-4 col-11">
+                <div class="row col-12 d-flex justify-content-start">
+                    <img src="{{ players.p_team.flag.url }}" class="flag rounded-circle">
+                    <h3 class="col-5 my-auto text-center">
+                        {{ players.p_first_name }}
+                        {% if players.p_second_name %}
+                        {{ players.p_second_name }}
+                        {% endif %}
+                        {{ players.p_first_last_name }}
+                        {% if players.p_second_last_name %}
+                        {{ players.p_second_last_name }}
+                        {% endif %}
+                    </h3>
+                    <h3 class="col-3 my-auto text-center">{{ players.p_number }}</h3>
+                    <h3 class="col-2 my-auto text-center">{{ players.p_position.position_name }}</h3>
+                    <img src="{{ players.p_photo.url }}" class="photop rounded-circle">
+                </div>
+            </div>
+        </a>
+        {% endif %}
+        {% empty %}
+        <div class="tabla container d-flex mb-3 rounded-4">
+            <div class="row col-12 d-flex justify-content-center">
+                <h3 class="col-10 my-auto text-center">Ups... Aún no tenemos registros de ningún jugador en este
+                    equipo...<i class='bx bxs-sad' style='color:#ffffff'></i></h3>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

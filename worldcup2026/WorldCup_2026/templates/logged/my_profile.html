@@ -1,0 +1,37 @@
+{% extends 'logged/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/logged/profile.css' %}">
+{% block title %}
+Tu perfil
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<div class="container col-12 mt-5 secondary mb-5">
+    <br>
+    <div class="row col-8 text-center mx-auto"><h1>Tus Datos Básicos</h1></div>
+    <div class="row col-9 justify-content-center mx-auto"><img src="{{ user.photo.url }}" alt="Foto de Perfil" class="rounded-pill" style="width: 20rem;"></div>
+    <br>
+    <div class="row col-9 mx-auto justify-content-center mb-3">
+        <div class="col-4 text-center" style="margin-right: 2rem;">
+            <label for="name" style="width: 5.5rem;">Tu nombre:</label>
+            <input class="col-12 h-75 rounded-3" id="name" value="{{ user.first_name }}" readonly>
+        </div>
+        <div class="col-4 text-center" style="margin-right: 2rem;">
+            <label for="name" style="width: 10rem; margin-left: 0.45rem;">Tu nombre de Usuario:</label>
+            <input class="col-12 h-75 rounded-3" id="username" value="{{ user.username }}" readonly>
+        </div>
+    </div>
+    <div class="row col-9 mx-auto justify-content-center mb-5">
+        <div class="col-4 text-center" style="margin-right: 2rem;">
+            <label for="name" style="width: 5rem; margin-right: 12.5rem;">Tu correo:</label>
+            <input class="col-12 h-75 rounded-3" id="name" value="{{ user.email }}" readonly>
+        </div>
+        <div class="col-4 text-center" style="margin-right: 2rem;">
+            <label for="name" style="width: 5.5rem;">Tu teléfono:</label>
+            <input class="col-12 h-75 rounded-3" id="username" value="{{ user.phone }}" readonly>
+        </div>
+    </div>
+</div>
+{% endblock %}

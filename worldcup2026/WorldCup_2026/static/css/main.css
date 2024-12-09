@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Product_Sans';
+    src: url('/../Evauacion_Django/WorldCup_2026/static/fonts/ProductSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.primary{
+    color: white;
+    background-image: url("/static/images/back.gif") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secondary{
+    background-color: #1E1E1E;
+    color: rgb(255, 255, 255);
+}
+
+.thirdary{
+    background-color: #ce970d;
+    color: rgb(0, 0, 0);
+}
+
+.quartary{
+    background-color: #C2FF33;
+    color: rgb(0, 0, 0);
+}
+
+.fifth{
+    background-color: #c8201d;
+    color: rgb(255, 255, 255);
+}
+
+.dark1{
+    color: rgb(255, 255, 255);
+}
+
+.dark2{
+    background-color: #00c611 !important;
+    color: rgb(255, 255, 255);
+}
+
+.dark3{
+    background-color: #0044ff !important;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    width: 16rem;
+    height: 9rem;
+}
+
+.navbar{
+    height: 5rem;
+}

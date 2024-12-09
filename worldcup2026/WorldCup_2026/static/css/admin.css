@@ -1,0 +1,123 @@
+/* Cambiar el fondo del contenido principal */
+.content-wrapper {
+    background-color: #1E1E1E;
+}
+
+/* Cambiar el fondo de la barra lateral */
+.main-sidebar {
+    background-color: #262626;
+    color: black;
+}
+
+.brand-text{
+    color: rgb(255, 255, 255);
+}
+
+.fas{
+    color: rgb(255, 255, 255);
+}
+
+.d-block{
+    color: rgb(255, 255, 255) !important;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+#panel{
+    color: rgb(255, 255, 255);
+}
+
+.main-header {
+    background-color: #C2FF33;
+}
+
+.content {
+    background-color: #121212;
+    color: white;
+}
+
+.card-header{
+    background-color: #C2FF33;
+    color: black;
+}
+
+.card-body{
+    background-color:#1E1E1E;
+}
+
+.table.table a{
+    color: #C2FF33;
+}
+
+.btn-info{
+    background-color: #C2FF33;
+    color: black;
+    border-color: #C2FF33;
+}
+
+.btn-info:hover{
+    background-color: #8cb923;
+    color: black;
+    border-color: #C2FF33;
+}
+
+.changelink{
+    color: black !important;
+}
+
+footer{
+    background-color: #121212;
+}
+
+.nav-link:active{
+    background-color: #121212;
+}
+
+#encabezado{
+    color: rgb(255, 255, 255);
+}
+
+.accent-primary .btn-link, .accent-primary .nav-tabs .nav-link, .accent-primary a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(.page-link):not(.btn) {
+    color: #ffffff;
+}
+
+.timeline>div>.timeline-item>.timeline-header{
+    background-color: #C2FF33;
+}
+
+.timeline>div>.timeline-item>.time{
+    color: rgb(103, 103, 103);
+}
+
+.fa-clock:before{
+    color: rgb(103, 103, 103);
+}
+
+.timeline>div>.fas{
+    color: rgb(0, 0, 0) !important;
+    background-color: #C2FF33 !important;
+}
+
+.timeline>div>.timeline-item>.timeline-body{
+    background-color:#262626;
+    color: white;
+}
+
+.fa-bars:before{
+    color: black !important;
+}
+
+.timeline-header a{
+    color: #121212 !important;
+}
+
+.timeline-header a:hover{
+    color: #8ebb26 !important;
+}
+
+.main-footer{
+    background-color: #C2FF33;
+    color: rgb(0, 0, 0);
+}

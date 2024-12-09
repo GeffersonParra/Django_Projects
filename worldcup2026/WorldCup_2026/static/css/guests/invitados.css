@@ -1,0 +1,255 @@
+body{
+    font-family:'Product_Sans';
+    background-image: url("/../Evauacion_Django/WorldCup_2026/static/images/back.gif") !important;
+}
+
+.info-nav{
+    background-color: #c8201d;
+    margin-top: 5rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.text{
+    margin-top: 30rem;
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.437);
+}
+
+#btn{
+    height: 2.5rem;
+    width: 7rem;
+    background-color: transparent !important;
+    border: black, 2.35px, solid;
+    border-radius: 12px;
+    color: black;
+    margin-left: 62vw;
+}
+
+#btn:hover{
+    background-color: black !important;
+    color: white;
+    box-shadow: 4px 4px 0px #5e5e5e;
+    transition: .6s;
+}
+
+#btn2{
+    height: 2.5rem;
+    width: 7rem;
+    background-color: black !important;
+    border: black, 2.35px, solid;
+    border-radius: 12px;
+    color: white;
+    margin-left: 1vw;
+}
+
+#btn2:hover{
+    height: 2.5rem;
+    background-color: transparent !important;
+    color: rgb(0, 0, 0);
+    margin-left: 1vw;
+    box-shadow: 4px 4px 0px #000000;
+    transition: .6s;
+}
+
+.canada{
+    height: 13.5rem;
+}
+
+.canada h1{
+    z-index: 2;
+}
+
+
+.united{
+    height: 13.5rem;
+}
+
+.united h1{
+    z-index: 2;
+}
+
+.mexico{
+    height: 13.5rem;
+}
+
+.mexico h1{
+    z-index: 2;
+}
+
+.animated-background1 {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #ff3939;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor:pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.animated-background1::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.4) 75%, rgba(255, 255, 255, 0.4) 100%);
+    background-size: 50px 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.canada:hover .animated-background1::before {
+    opacity: 1;
+    animation: moveLines 1.5s linear infinite;
+}
+
+@keyframes moveLines {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(25px) translateY(0px);
+    }
+    50%{
+        transform: translateX(50px) translateY(0px);
+    }
+    75%{
+        transform: translateX(75px) translateY(0px);
+    }
+    100% {
+        transform: translateX(100px) translateY(0px);
+    }
+}
+
+.animated-background2 {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #1154ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background2::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 300%;
+    background-image: radial-gradient(circle, transparent 20%, #ff505057 20%, #ff3a3a3f 40%, transparent 40%, transparent 60%, #ffffff41 60%, #ffffff4c 80%, transparent 80%);
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.united:hover .animated-background2::before {
+    opacity: 1;
+    animation: moveCircles 1.5s linear infinite;
+}
+
+@keyframes moveCircles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}
+
+.animated-background3 {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #129b00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.animated-background3::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 300%;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #c61000a2 25%,
+        transparent 25%,
+        transparent 50%,
+        #cf1100b1 50%,
+        #c51000aa 75%,
+        transparent 75%,
+        transparent 100%
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #ffffff84 25%,
+        transparent 25%,
+        transparent 50%,
+        #ffffff8d 50%,
+        #ffffff80 75%,
+        transparent 75%,
+        transparent 100%
+    );
+    background-size: 100px 100px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.mexico:hover .animated-background3::before {
+    opacity: 1;
+    animation: triangles 1.5s linear infinite;
+}
+
+@keyframes triangles {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-25px) translateY(-25px);
+    }
+    50%{
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75%{
+        transform: translateX(-75px) translateY(-75px);
+    }
+    100% {
+        transform: translateX(-100px) translateY(-100px);
+    }
+}

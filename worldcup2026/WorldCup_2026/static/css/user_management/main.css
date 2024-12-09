@@ -1,0 +1,118 @@
+body{
+    font-family:'Product_Sans';
+    background-image: url("/../Evauacion_Django/WorldCup_2026/static/images/back.gif") !important;
+}
+
+.login{
+    margin-top: 11rem;
+    border-radius: 12px;
+}
+
+label{
+    position: relative;
+    top: 2.1rem;
+    left: 0.5rem;
+    background-color: #1E1E1E;
+    transition: 0.3s ease;
+}
+
+#usr{
+    width: 4rem;
+    text-align: center;
+}
+
+#psw{
+    width: 6rem;
+    text-align: center;
+}
+
+#fna{
+    width: 5rem;
+    text-align: center;
+}
+
+#lna{
+    width: 5rem;
+    text-align: center;
+}
+
+#pho{
+    top: -0.1rem;
+    width: 2rem;
+    text-align: center;
+}
+
+#tel{
+    width: 4.2rem;
+    text-align: center;
+}
+
+#eml{
+    width: 3.5rem;
+    text-align: center;
+}
+
+#rpw{
+    width: 9.4rem;
+    text-align: center;
+}
+
+input{
+    background-color: transparent !important;
+    border: white, 3px, solid !important;
+    color: #C2FF33 !important;
+}
+
+input:focus, input:valid{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.label-focused {
+    top: 0.8rem;
+    color: #C2FF33;
+    transition: 0.5s ease;
+}
+
+.icon-focused {
+    color: #C2FF33;
+    transition: 0.5s ease;
+}
+
+#input-box2{
+    position: relative;
+    top: -3.5rem;
+}
+
+i{
+    position: relative;
+    top: -1.6em;
+    left: 91%;
+    font-size: larger;
+    z-index: 5;
+}
+
+#btn{
+    margin-top: -1.5rem;
+    margin-bottom: 5rem;
+    height: 2.5rem;
+    background-color: #C2FF33;
+    border: #719223, 2.35px, solid;
+    border-radius: 12px;
+}
+
+#btn:hover{
+    background-color: #a2cd3e;
+    box-shadow: 4px 4px 0px #5e5e5e;
+    transition: .6s;
+}
+
+#link{
+    margin-top: -3.5rem;
+    margin-bottom: 2rem;
+}
+
+#link a{
+    color: #C2FF33;
+    font-weight: bold;
+}
